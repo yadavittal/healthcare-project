@@ -33,7 +33,7 @@
   border: none;
   border-radius: 0.5rem;
   outline: none;
-  width: 897px;
+  width: 918px;
   font-size: 0.875rem;
   transition: all 0.2s;
 }
@@ -97,32 +97,29 @@
   background: #7c3aed;
 }
 
-@media (max-width:1024) {
+@media (width:1024px) {
+  
   .searchInput {
-    width: 400px;
-  }
-  .searchContainer {
-    width: 400px;
+    width: 397px;
   }
 }
-@media (max-width: 767px) {
-  .header {
-    padding: 1rem;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .leftSection {
-    gap: 1rem;
-  }
-
+@media (max-width: 768px) {
+  
   .searchInput {
-    width: 200px;
+    width: 316px;
   }
 
   .logo {
     font-size: 1.25rem;
   }
+}
+@media (max-width: 480px) {
+ .leftSection {
+  margin-left: 0.3rem;
+ }
+ .rightSection {
+  margin-right: 0.6rem;
+ }
 }
 
 

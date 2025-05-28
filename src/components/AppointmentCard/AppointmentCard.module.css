@@ -74,7 +74,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .card {
     padding: 0.625rem;
   }

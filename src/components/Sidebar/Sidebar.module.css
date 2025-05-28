@@ -3,7 +3,6 @@
   background: white;
   border-right: 1px solid #e2e8f0;
   padding: 1.5rem;
-  overflow-y: auto;
   height: 100vh;
 }
 
@@ -74,9 +73,9 @@
   font-size: 0.875rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .sidebar {
-    width: 100%;
+    width: 250px;
     height: auto;
     padding: 1rem;
     border-right: none;
@@ -84,9 +83,8 @@
   }
 
   .nav {
-    flex-direction: row;
+    display: flex;
     gap: 1rem;
-    overflow-x: auto;
   }
 
   .section {
@@ -94,7 +92,7 @@
   }
 
   .navList {
-    flex-direction: row;
+    flex-direction: column;
     gap: 0.25rem;
   }
 
