@@ -101,3 +101,28 @@
     white-space: nowrap;
   }
 }
+@media (max-width: 426px) {
+  .sidebar {
+    width: 72px;
+    padding: 1rem 0.5rem;
+  }
+
+  .logo,
+  .sectionTitle {
+    display: none;
+  }
+
+  .navLink {
+    padding: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+    width: 50px;
+  }
+
+  .navLink span {
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+  }
+
+}

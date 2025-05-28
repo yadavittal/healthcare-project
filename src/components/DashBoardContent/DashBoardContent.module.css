@@ -53,9 +53,7 @@
 }
 
 @media (max-width: 768px) {
-  /* .main {
-    padding: 1rem;
-  } */
+  
   .topSection {
     grid-template-columns: 1fr;
   }
@@ -73,3 +71,8 @@
   }
 }
 
+@media (max-width:426px) {
+  .main {
+    padding: 0%;
+  }
+}
