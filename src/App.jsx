@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import  Sidebar  from './components/Sidebar/Sidebar.jsx'
 import Header from './components/Header/Header.jsx'
-import DashboardContent from './components/DashboardContent/DashboardContent.jsx'
+import DashboardContent from './components/DashBoardContent/DashboardContent.jsx'
 
 function App() {
 
