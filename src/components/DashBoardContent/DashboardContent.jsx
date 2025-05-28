@@ -2,7 +2,7 @@ import AnatomySection from "../AnatomySection/AnatomySec"
 import CalendarView from "../CalendarView/CalendarView"
 import UpcomingSchedule from "../UpcomingSchedule/UpcomingSchedule"
 import ActivityFeed from "../ActivityFeed/Activity"
-import styles from "./DashboardContent.module.css"
+import styles from "./DashBoardContent.module.css"
 
 
 function DashBoardContent() {
