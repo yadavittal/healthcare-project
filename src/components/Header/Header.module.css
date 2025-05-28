@@ -1,0 +1,128 @@
+.header {
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  color: #9ca3af;
+  z-index: 1;
+}
+
+.searchInput {
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  width: 897px;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.searchInput:focus {
+  box-shadow: 0 0 0 2px #06b6d4;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 6px;
+}
+
+.notificationContainer {
+  position: absolute;
+  right: 10px;
+}
+.iconWrapper {
+  background-color: darkblue;
+  padding: 8px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bellIcon {
+  color: white;
+  cursor: pointer;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.addButton {
+  background: darkblue;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.addButton:hover {
+  background: #7c3aed;
+}
+
+@media (max-width:1024) {
+  .searchInput {
+    width: 400px;
+  }
+  .searchContainer {
+    width: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .leftSection {
+    gap: 1rem;
+  }
+
+  .searchInput {
+    width: 200px;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+}
+
+

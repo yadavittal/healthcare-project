@@ -1,0 +1,189 @@
+.container {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.headerInfo {
+  flex: 1;
+}
+
+.weekLabel {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0 0 0.25rem 0;
+}
+
+.monthTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: darkblue;
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navButton {
+  background: none;
+  border: none;
+  padding: 0.25rem;
+  font-size: 2.5rem;
+  color: darkblue;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.navButton:hover {
+  background: #f3f4f6;
+}
+
+.calendar {
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+
+.weekDays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.weekDay {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.25rem;
+}
+
+.calendarDay {
+  text-align: center;
+  padding: 0.5rem;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dayNumber {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.dayNumber.today {
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px 0px 10px;
+  font-weight: 600;
+  background-color: darkblue;
+}
+
+.appointment {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 0.125rem;
+}
+
+.appointmentCards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.dentistCard {
+  background: darkblue;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.physioCard {
+  background: #eff6ff;
+  color: darkblue;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.cardContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardInfo {
+  flex: 1;
+}
+
+.cardTitle {
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+  font-size: 0.875rem;
+}
+
+.cardTime,
+.cardDoctor {
+  font-size: 0.75rem;
+  margin: 0.125rem 0;
+  opacity: 0.9;
+}
+
+.cardIcon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .calendarGrid {
+    gap: 0.125rem;
+  }
+
+  .calendarDay {
+    min-height: 50px;
+    padding: 0.25rem;
+  }
+
+  .dayNumber {
+    font-size: 0.875rem;
+  }
+
+  .appointment {
+    font-size: 0.625rem;
+  }
+
+  .cardTitle {
+    font-size: 0.75rem;
+  }
+
+  .cardTime,
+  .cardDoctor {
+    font-size: 0.625rem;
+  }
+}
+

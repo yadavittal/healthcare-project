@@ -1,0 +1,124 @@
+.container {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: darkblue;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.chartContainer {
+  flex: 1;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.chart {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+  height: 200px;
+  padding: 0 1rem;
+}
+
+.dayColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  height: 100%;
+  justify-content: end;
+}
+
+.bar {
+  width: 16px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.bar.cyan {
+  background: #06b6d4;
+}
+
+.bar.blue {
+  background: #3b82f6;
+}
+
+.bar:hover {
+  opacity: 0.8;
+  transform: scaleX(1.1);
+}
+
+.dayLabel {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .title {
+    font-size: 1.125rem;
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+  }
+
+  .chart {
+    height: 150px;
+    gap: 0.25rem;
+    padding: 0 0.5rem;
+  }
+
+  .bar {
+    width: 12px;
+  }
+
+  .dayLabel {
+    font-size: 0.625rem;
+  }
+}
+

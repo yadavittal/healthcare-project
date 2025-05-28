@@ -1,0 +1,75 @@
+.main {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  background: #f8fafc;
+}
+
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: darkblue;
+  margin: 0;
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.anatomyContainer {
+  min-height: 400px;
+}
+
+.calendarContainer {
+  min-height: 400px;
+}
+
+.bottomSection {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+}
+
+.scheduleContainer,
+.activityContainer {
+  min-height: 300px;
+}
+
+@media (max-width: 1024px) {
+  .topSection {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomSection {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .main {
+    padding: 1rem;
+  } */
+  .topSection {
+    grid-template-columns: 1fr;
+  }
+  .bottomSection {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .topSection,
+  .bottomSection {
+    gap: 1rem;
+  }
+}
+
